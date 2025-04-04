@@ -1,0 +1,50 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4fbf2; 
+    color: #2e7d32; 
+    text-align: center;
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* Heading */
+h2 {
+    color: #1b5e20; 
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+    background-color: #4caf50; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 8px 0;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c; 
+}
+
+/* Product Info Section */
+#carbon-info {
+    background-color: #e8f5e9; 
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #c8e6c9; 
+}
+
+#product-info, #carbon-score {
+    font-size: 14px;
+    color: #1b5e20; 
+    font-weight: bold;
+}
