@@ -11,7 +11,17 @@ const companies = [
         ESGScore: 76.83,
         ESGRiskRating: "A",
         industryRank: "1 out of 5",
-        description: "Microsoft has committed to being carbon negative by 2030 and has invested heavily in renewable energy."
+        description: "Microsoft has committed to being carbon negative by 2030 and has invested heavily in renewable energy.",
+        carbonFootprint: 12.5, // metric tons CO2e
+        renewableEnergy: 60, // percentage
+        waterUsage: 4.2, // million cubic meters
+        wasteReduction: 35, // percentage reduction
+        employeeSatisfaction: 78, // percentage
+        diversityScore: 72, // out of 100
+        communityInvestment: 150, // million dollars
+        boardDiversity: 67, // percentage
+        executivePayRatio: 154, // CEO pay ratio
+        ethicsCompliance: 85 // out of 100
     },
     {
         id: "ul",
@@ -25,7 +35,17 @@ const companies = [
         ESGScore: 76.67,
         ESGRiskRating: "A",
         industryRank: "2 out of 5",
-        description: "Unilever's Sustainable Living Plan aims to decouple growth from environmental impact."
+        description: "Unilever's Sustainable Living Plan aims to decouple growth from environmental impact.",
+        carbonFootprint: 18.2,
+        renewableEnergy: 45,
+        waterUsage: 6.8,
+        wasteReduction: 42,
+        employeeSatisfaction: 82,
+        diversityScore: 78,
+        communityInvestment: 210,
+        boardDiversity: 60,
+        executivePayRatio: 175,
+        ethicsCompliance: 80
     },
     {
         id: "tsla",
@@ -36,10 +56,20 @@ const companies = [
         environmentalScore: 90.00,
         socialScore: 65.00,
         governanceScore: 68.00,
-        ESGScore: 74.33,
+        ESGScore:74.33,
         ESGRiskRating: "B",
         industryRank: "3 out of 5",
-        description: "Tesla's mission is to accelerate the world's transition to sustainable energy."
+        description: "Tesla's mission is to accelerate the world's transition to sustainable energy.",
+        carbonFootprint: 8.7,
+        renewableEnergy: 95,
+        waterUsage: 2.1,
+        wasteReduction: 60,
+        employeeSatisfaction: 70,
+        diversityScore: 65,
+        communityInvestment: 85,
+        boardDiversity: 55,
+        executivePayRatio: 210,
+        ethicsCompliance: 75
     },
     {
         id: "patagonia",
@@ -53,7 +83,17 @@ const companies = [
         ESGScore: 83.33,
         ESGRiskRating: "A",
         industryRank: "1 out of 5",
-        description: "Patagonia is a leader in sustainable apparel and environmental activism."
+        description: "Patagonia is a leader in sustainable apparel and environmental activism.",
+        carbonFootprint: 5.2,
+        renewableEnergy: 100,
+        waterUsage: 1.8,
+        wasteReduction: 75,
+        employeeSatisfaction: 90,
+        diversityScore: 82,
+        communityInvestment: 120,
+        boardDiversity: 70,
+        executivePayRatio: 125,
+        ethicsCompliance: 90
     },
     {
         id: "crm",
@@ -67,7 +107,17 @@ const companies = [
         ESGScore: 77.33,
         ESGRiskRating: "A",
         industryRank: "2 out of 5",
-        description: "Salesforce has committed to 100% renewable energy and has strong equality initiatives."
+        description: "Salesforce has committed to 100% renewable energy and has strong equality initiatives.",
+        carbonFootprint: 10.8,
+        renewableEnergy: 85,
+        waterUsage: 3.5,
+        wasteReduction: 50,
+        employeeSatisfaction: 85,
+        diversityScore: 80,
+        communityInvestment: 180,
+        boardDiversity: 65,
+        executivePayRatio: 160,
+        ethicsCompliance: 88
     },
     {
         id: "googl",
@@ -81,8 +131,18 @@ const companies = [
         ESGScore: 75.67,
         ESGRiskRating: "A",
         industryRank: "3 out of 5",
-        description: "Google has been carbon neutral since 2007 and aims to run on carbon-free energy by 2030."
+        description: "Google has been carbon neutral since 2007 and aims to run on carbon-free energy by 2030.",
+        carbonFootprint: 15.3,
+        renewableEnergy: 75,
+        waterUsage: 5.2,
+        wasteReduction: 65,
+        employeeSatisfaction: 80,
+        diversityScore: 70,
+        communityInvestment: 250,
+        boardDiversity: 60,
+        executivePayRatio: 195,
+        ethicsCompliance: 82
     }
 ];
 
-module.exports = {data: companies};
+module.exports = {data: companies}
