@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "EcoInvest",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arushiranjan/EcoInvest.git"
+  },
+  "author": "Vivek Rai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arushiranjan/EcoInvest/issues"
+  },
+  "homepage": "https://github.com/arushiranjan/EcoInvest#readme"
+}
