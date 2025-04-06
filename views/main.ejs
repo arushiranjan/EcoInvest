@@ -811,6 +811,119 @@
             margin : 0px;
             visibility: visible;
         }
+
+        /* Compare Investments Section */
+.compare-investments {
+    background: linear-gradient(135deg, rgba(26, 115, 232, 0.9), rgba(13, 71, 161, 0.9));
+    padding: 80px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.compare-investments::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.investments-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.compare-investments h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.compare-investments p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #e0f7e0;
+}
+
+.investment-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.investment-icon {
+    background: rgba(255, 255, 255, 0.15);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    padding: 15px;
+}
+
+.investment-icon span {
+    font-size: 14px;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.investment-icon:hover {
+    transform: translateY(-5px) scale(1.1);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.invest-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #8bc34a, #689f38);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    box-shadow: 0 8px 25px rgba(139, 195, 74, 0.4);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.invest-btn:hover {
+    background: linear-gradient(135deg, #9ccc65, #7cb342);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(139, 195, 74, 0.5);
+}
+
+.invest-btn i {
+    margin-left: 10px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.invest-btn:hover i {
+    transform: translateX(5px);
+}
+
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -904,15 +1017,47 @@
                 <div class="carbon-icon"><i class="fas fa-utensils"></i></div>
                 <div class="carbon-icon"><i class="fas fa-plane"></i></div>
             </div>
-            
-            <form method="GET" action="/demo">
                 <a href="/compare-products" class="compare-btn">
                     <button class="compare-btn" >Compare Products Now <i class="fas fa-arrow-right"></i></button> 
                 </a>
-            </form>
             
         </div>
     </section>
+
+        <!-- Compare Investments Section -->
+        <section class="compare-investments">
+            <div class="investments-content">
+                <h2>Invest in a Sustainable Future</h2>
+                <p>Compare top ESG-rated companies and sustainable investment funds. Our platform helps you align your portfolio with your values while maintaining strong financial performance.</p>
+                
+                <div class="investment-icons">
+                    <div class="investment-icon">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Stocks</span>
+                    </div>
+                    <div class="investment-icon">
+                        <i class="fas fa-money-bill-trend-up"></i>
+                        <span>ETFs</span>
+                    </div>
+                    <div class="investment-icon">
+                        <i class="fas fa-seedling"></i>
+                        <span>Green Bonds</span>
+                    </div>
+                    <div class="investment-icon">
+                        <i class="fas fa-globe"></i>
+                        <span>Impact Funds</span>
+                    </div>
+                    <div class="investment-icon">
+                        <i class="fas fa-solar-panel"></i>
+                        <span>Clean Tech</span>
+                    </div>
+                </div>
+                
+                <a href="/compare-investments" class="invest-btn">
+                    Compare Investments <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -1236,6 +1381,19 @@
                 this.style.background = 'rgba(255, 255, 255, 0.15)';
             });
         });
+
+        // Add hover effects to investment icons
+        document.querySelectorAll('.investment-icon').forEach(icon => {
+            icon.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px) scale(1.1)';
+                this.style.background = 'rgba(255, 255, 255, 0.25)';
+            });
+            icon.addEventListener('mouseleave', function() {
+                this.style.transform = '';
+                this.style.background = 'rgba(255, 255, 255, 0.15)';
+            });
+        });
+
     </script>
 </body>
 </html>

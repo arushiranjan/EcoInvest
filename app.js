@@ -77,18 +77,18 @@ app.get("/",(req,res)=>{
 })
 
 
-app.get("/demo",async (req,res)=>{
+app.get("/compare-investments",async (req,res)=>{
     const data = await Invest.find({});
     console.log(data);
     res.render("comparison.ejs", {data})
 })
 
 
-// app.get("/demo",async (req,res)=>{
-//   const productData = await ProductEmission.find({});
-//   console.log(productData);
-//   res.render("compareProduct.ejs", {productData});
-// })
+app.get("/compare-products",async (req,res)=>{
+  const productData = await ProductEmission.find({});
+  console.log(productData);
+  res.render("compareProduct.ejs", {productData});
+})
 
 
 app.post("/signup", async (req, res) => {
