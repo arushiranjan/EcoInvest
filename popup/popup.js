@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const carbonInfoDiv = document.getElementById("carbon-info");
     const productInfo = document.getElementById("product-info");
     const carbonScore = document.getElementById("carbon-score");
+    const sustainable = document.getElementById("sustainabilty");
+    const getAlt = document.getElementById("sustainabilty");
 
     getCarbonBtn.addEventListener("click", () => {
         chrome.runtime.sendMessage({ event: "getProductData" }, (response) => {
@@ -12,12 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             console.log("Received data:", response);
 
-            // Update UI with product details
             productInfo.innerText = response.product || "No product found";
             carbonScore.innerText = "Carbon Footprint: " + (response.carbon || "--");
-
-            // Make the carbon info visible
+            sustainable.innerText = response.sustain || "No data";
             carbonInfoDiv.style.display = "block";
         });
     });
+
 });
